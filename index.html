@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Startup Finances Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img
+      src="images/Edhubjogocalculator.svg"
+      alt="Description of image"
+      class="img-fluid"
+      style="max-width: 500px; max-height: 300px"
+    />
+    <h1>Initial Launch - Finances Calculator</h1>
+
+    <table id="financesTable">
+      <thead>
+        <tr>
+          <th>Supercategory</th>
+          <th>Category</th>
+          <th id="detailscolumn">Details/Reason For</th>
+          <th>Importance</th>
+          <th>Cost (€)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- AI Development -->
+        <tr>
+          <td rowspan="4">AI Development</td>
+          <td>Machine Learning</td>
+          <td>Machine learning algorithms for AI</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Deep Learning</td>
+          <td>Training deep neural networks</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Natural Language Processing</td>
+          <td>Processing human language data</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>OCR</td>
+          <td>Optical character recognition</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+
+        <!-- Product Development -->
+        <tr>
+          <td rowspan="4">Product Development</td>
+          <td>UX/UI Design</td>
+          <td>Designing user-friendly interfaces</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Front-End</td>
+          <td>Development of client-side features</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Back-End</td>
+          <td>Server-side development</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>DevOps</td>
+          <td>Infrastructure management and automation</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+
+        <!-- Marketing -->
+        <tr>
+          <td rowspan="4">Marketing and Promotion</td>
+          <td>Market Research</td>
+          <td>Researching market needs and competition</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Branding</td>
+          <td>Creating brand identity</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Advertising</td>
+          <td>Online and offline ads</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>PR</td>
+          <td>Public Relations</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <!-- Administrative and Legal -->
+        <tr>
+          <td rowspan="3">Administrative & Legal</td>
+          <td>Legal Fees</td>
+          <td>Ensure that edHub is compliant with laws and regulations</td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Business Development</td>
+          <td>
+            Build partnerships with educational institutions to expand EdHub's
+            reach.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Project Management</td>
+          <td>
+            Coordinate teams and resources to ensure the timely and efficient
+            launch of EdHub.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <!-- Testing and Quality Assurance -->
+        <tr>
+          <td rowspan="2">Testing and Quality Assurance</td>
+          <td>Quality Assurance</td>
+          <td>
+            Ensure EdHub's features function correctly and meet user
+            expectations before launch.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Beta Testing</td>
+          <td>
+            Gather feedback from real users to identify bugs and improve the
+            software's usability.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+
+        <!-- Miscellaneous Costs -->
+        <tr>
+          <td rowspan="4">Miscellaneous Costs</td>
+          <td>Training</td>
+          <td>
+            Equip the team with necessary skills and knowledge to use and
+            support EdHub effectively.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Documentation</td>
+          <td>
+            Create user manuals and technical documentation for ease of use and
+            future development.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Customer Support</td>
+          <td>
+            Provide assistance to users with issues or questions to ensure a
+            smooth experience with EdHub.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+        <tr>
+          <td>Contingency</td>
+          <td>
+            Set aside funds for unexpected expenses or challenges that may arise
+            during development.
+          </td>
+          <td>
+            <select class="importance">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </td>
+          <td><input type="number" class="costInput" value="0" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="calculateTotal()">Calculate Total Cost</button>
+
+    <h1>Total Cost: €<span id="totalCost">0</span></h1>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
